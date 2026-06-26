@@ -1,0 +1,9 @@
+Where Clause
+-------
+where clause we can use to filter 1 row and it will use before group by clause and one more thing in where clause we can't use aggregate functions (SUM, COUNT, AVG, etc.)?
+syntax: SELECT * FROM EMPLOYEES WHERE SALARY > 40000;
+
+Having 
+--------
+having  we can use to filter group of rows and it will use after group by clause ,in having clause we can use aggregate functions (SUM, COUNT, AVG, etc.)?
+syntax:SELECT DEPARTMENT,AVG(SALARY) FROM EMPLOYEES GROUP BY DEPARTMENT HAVING AVG(SALARY) >40000
